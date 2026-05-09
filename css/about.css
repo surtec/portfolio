@@ -623,6 +623,25 @@ section { padding: 6rem 0; }
 @media (max-width: 1024px) { .skills-container { grid-template-columns: 1fr; } }
 
 /* ================================================================
+   CTA SECTION
+   ================================================================ */
+
+.cta-section {
+  padding: 5rem 0;
+  text-align: center;
+  background: var(--bg-secondary);
+}
+.cta-section .section-tag { justify-content: center; margin-bottom: 1.5rem; }
+.cta-heading { font-size: clamp(1.8rem, 4vw, 2.8rem); margin-bottom: 1rem; }
+.cta-text {
+  color: var(--text-secondary);
+  max-width: 480px;
+  margin: 0 auto 2rem;
+  line-height: 1.7;
+}
+.cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* ================================================================
    FOOTER
    ================================================================ */
 
