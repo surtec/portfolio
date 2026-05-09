@@ -1,9 +1,9 @@
 {
   "name": "portfolio-backend",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "js/server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node js/server.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
