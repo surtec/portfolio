@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Muhammad Abdoel</title>
+  <meta name="description" content="Get in touch with Muhammad Abdoel — open to freelance work, collaborations, and full-time opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">MA.</a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="work.html">Work</a></li>
+      <li><a href="contact.html" class="nav-cta active">Contact</a></li>
+    </ul>
+    <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-blob page-hero-blob-1"></div>
+  <div class="container">
+    <div class="section-tag section-tag--spaced">
+      <span class="tag"><i class="fas fa-paper-plane"></i> Contact</span>
+    </div>
+    <h1 class="reveal">Let's <span class="gradient-text">Connect</span></h1>
+    <p class="reveal reveal-delay-1">
+      Have a project in mind, a question, or just want to say hello? I'd love to hear from you — my inbox is always open.
+    </p>
+  </div>
+</section>
+
+<!-- CONTACT SECTION -->
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <!-- Left: Info -->
+      <div class="contact-info">
+        <h2 class="reveal">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="reveal reveal-delay-1">
+          Whether you're looking for a developer to join your team, need a freelance collaborator for a project, or simply want to chat about tech — I'm all ears. I typically respond within 24 hours.
+        </p>
+
+        <div class="contact-details">
+          <div class="contact-detail reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail-info">
+              <h4>Email</h4>
+              <p>abdoels334@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-1">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail-info">
+              <h4>Location</h4>
+              <p>Paramaribo, Suriname 🇸🇷</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-2">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-detail-info">
+              <h4>Response Time</h4>
+              <p>Within 24 hours</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-3">
+            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+            <div class="contact-detail-info">
+              <h4>Work Mode</h4>
+              <p>Remote / Hybrid / On-site</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Social links -->
+        <div class="contact-social-row reveal">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" title="Twitter/X" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" title="CodePen" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+          <a href="#" class="social-btn" title="Dev.to" aria-label="Dev.to"><i class="fab fa-dev"></i></a>
+        </div>
+
+        <!-- Availability -->
+        <div class="availability-badge reveal">
+          <div class="avail-dot"></div>
+          <p class="avail-text">Currently available for freelance &amp; full-time roles</p>
+        </div>
+      </div>
+
+      <!-- Right: Form -->
+      <div class="contact-form-card reveal reveal-delay-2">
+        <h3 class="form-title">Send a Message</h3>
+        <p class="form-subtitle">Fill in the form below and I'll get back to you as soon as possible.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected>Select a topic…</option>
+              <option value="freelance">Freelance / Contract Work</option>
+              <option value="fulltime">Full-Time Opportunity</option>
+              <option value="collab">Collaboration / Partnership</option>
+              <option value="feedback">Feedback on My Work</option>
+              <option value="other">Just Saying Hello 👋</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget">Budget Range (optional)</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected>Select a range…</option>
+              <option value="small">Under €1,000</option>
+              <option value="medium">€1,000 – €5,000</option>
+              <option value="large">€5,000 – €15,000</option>
+              <option value="xlarge">€15,000+</option>
+              <option value="na">Not Applicable</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, idea, or anything on your mind…" required></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+
+        <!-- Success state -->
+        <div class="form-success">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3>Message Sent! 🎉</h3>
+          <p>Thanks for reaching out. I'll review your message and get back to you within 24 hours.</p>
+        </div>
+      </div>
+
+    </div><!-- /contact-grid -->
+
+    <!-- FAQ strip -->
+    <div class="faq-section reveal">
+      <h3 class="faq-title">
+        Frequently Asked <span class="gradient-text">Questions</span>
+      </h3>
+      <div class="faq-grid">
+
+        <div class="feature-card">
+          <div class="feature-icon">💼</div>
+          <h4>Are you available for freelance?</h4>
+          <p>Yes! I take on select freelance and contract projects alongside my main work. Let's discuss your needs.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⏱️</div>
+          <h4>What's your typical timeline?</h4>
+          <p>Small projects take 1–3 weeks; larger applications typically 4–12 weeks depending on complexity and scope.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌍</div>
+          <h4>Do you work remotely?</h4>
+          <p>Absolutely — I'm fully set up for remote work and have collaborated with international teams across time zones.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🤝</div>
+          <h4>What does collaboration look like?</h4>
+          <p>Regular check-ins, transparent progress updates, iterative feedback loops, and clear documentation at every stage.</p>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo">MA.</a>
+      <p class="footer-text">© 2025 Muhammad Abdoel. Crafted with ❤️ and lots of ☕</p>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:abdoels334@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script>
+  document.getElementById('contactForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    const btn = this.querySelector('.form-submit');
+    btn.disabled = true;
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending…';
+
+    const data = {
+      fname:   this.fname.value.trim(),
+      lname:   this.lname.value.trim(),
+      email:   this.email.value.trim(),
+      subject: this.subject.value,
+      budget:  this.budget.value,
+      message: this.message.value.trim(),
+    };
+
+    try {
+      const res = await fetch('http://localhost:3000/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(data),
+      });
+      const json = await res.json();
+      if (json.success) {
+        this.style.display = 'none';
+        document.querySelector('.form-success').style.display = 'flex';
+      } else {
+        alert(json.error || 'Something went wrong.');
+        btn.disabled = false;
+        btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+      }
+    } catch {
+      alert('Could not reach the server. Make sure it is running.');
+      btn.disabled = false;
+      btn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+    }
+  });
+</script>
+</body>
+</html>
