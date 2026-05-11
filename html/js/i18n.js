@@ -132,12 +132,15 @@ const TRANSLATIONS = {
     'abt.exp.3.desc': 'Currently working in a management role at Francisco N.V alongside my ICT studies at UNASAT. Applying strong organisational and leadership skills while continuing to grow my technical knowledge in the field of information technology.',
 
     /* ══ ABOUT PAGE · SKILLS ══ */
-    'abt.sk.tag':    'Skills',
-    'abt.sk.title':  'Tech <span class="gradient-text">Stack</span>',
-    'abt.sk.sub':    "The technologies I've learned and worked with so far in my ICT studies and projects.",
-    'abt.sk.webdev': 'Web Development',
-    'abt.sk.prog':   'Programming',
-    'abt.sk.db':     'Database & Tools',
+    'abt.sk.tag':              'Skills',
+    'abt.sk.title':            'Tech <span class="gradient-text">Stack</span>',
+    'abt.sk.sub':              "The technologies I've learned and worked with so far in my ICT studies and projects.",
+    'abt.sk.webdev':           'Web Development',
+    'abt.sk.prog':             'Programming',
+    'abt.sk.db':               'Database & Tools',
+    'abt.sk.lvl.comfortable':  'Comfortable',
+    'abt.sk.lvl.learning':     'Learning',
+    'abt.sk.lvl.exploring':    'Exploring',
 
     /* ══ ABOUT PAGE · CTA ══ */
     'abt.cta.tag':   "Let's Work Together",
@@ -145,6 +148,7 @@ const TRANSLATIONS = {
     'abt.cta.text':  "I'm open to freelance work, collaborations, and full-time opportunities. Don't hesitate to reach out — I'd love to hear about your project.",
     'abt.cta.btn1':  'Get In Touch',
     'abt.cta.btn2':  'View My Work',
+    'abt.cta.cv':    'Download CV',
 
     /* ══ WORK PAGE ══ */
     'wrk.hero.tag':   'Portfolio',
@@ -336,12 +340,15 @@ const TRANSLATIONS = {
     'abt.exp.3.desc': 'Momenteel werkzaam in een managementfunctie bij Francisco N.V naast mijn ICT-studie aan de UNASAT. Sterke organisatorische en leiderschapsvaardigheden toepassen terwijl ik mijn technische kennis blijf uitbreiden.',
 
     /* ══ ABOUT PAGE · SKILLS ══ */
-    'abt.sk.tag':    'Vaardigheden',
-    'abt.sk.title':  'Tech <span class="gradient-text">Stack</span>',
-    'abt.sk.sub':    'De technologieën die ik tot nu toe heb geleerd en gebruikt in mijn ICT-studie en projecten.',
-    'abt.sk.webdev': 'Webontwikkeling',
-    'abt.sk.prog':   'Programmeren',
-    'abt.sk.db':     'Database & Tools',
+    'abt.sk.tag':              'Vaardigheden',
+    'abt.sk.title':            'Tech <span class="gradient-text">Stack</span>',
+    'abt.sk.sub':              'De technologieën die ik tot nu toe heb geleerd en gebruikt in mijn ICT-studie en projecten.',
+    'abt.sk.webdev':           'Webontwikkeling',
+    'abt.sk.prog':             'Programmeren',
+    'abt.sk.db':               'Database & Tools',
+    'abt.sk.lvl.comfortable':  'Bedreven',
+    'abt.sk.lvl.learning':     'Aan het Leren',
+    'abt.sk.lvl.exploring':    'Aan het Verkennen',
 
     /* ══ ABOUT PAGE · CTA ══ */
     'abt.cta.tag':   'Laten We Samenwerken',
@@ -349,6 +356,7 @@ const TRANSLATIONS = {
     'abt.cta.text':  'Ik sta open voor freelance werk, samenwerkingen en voltijdse kansen. Aarzel niet om contact op te nemen — ik hoor graag over uw project.',
     'abt.cta.btn1':  'Neem Contact Op',
     'abt.cta.btn2':  'Bekijk Mijn Werk',
+    'abt.cta.cv':    'Download CV',
 
     /* ══ WORK PAGE ══ */
     'wrk.hero.tag':   'Portfolio',
