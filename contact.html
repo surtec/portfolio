@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Muhammad Abdoel</title>
+  <meta name="description" content="Get in touch with Muhammad Abdoel — open to freelance work, collaborations, and full-time opportunities." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/contact.css" />
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container">
+    <a href="index.html" class="nav-logo">MA.</a>
+    <ul class="nav-links">
+      <li><a href="index.html" data-i18n="nav.home">Home</a></li>
+      <li><a href="work.html" data-i18n="nav.work">Work</a></li>
+      <li><a href="contact.html" class="nav-cta active" data-i18n="nav.contact">Contact</a></li>
+    </ul>
+    <button type="button" class="lang-toggle" aria-label="Switch language">
+      <span class="lang-en lang-active">EN</span>
+      <span class="lang-sep">|</span>
+      <span class="lang-nl">NL</span>
+    </button>
+    <div class="hamburger" aria-label="Toggle menu" role="button" tabindex="0">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+</nav>
+
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-blob page-hero-blob-1"></div>
+  <div class="container">
+    <div class="section-tag section-tag--spaced">
+      <span class="tag"><i class="fas fa-paper-plane"></i> <span data-i18n="cnt.hero.tag">Contact</span></span>
+    </div>
+    <h1 class="reveal" data-i18n-html="cnt.hero.title">Let's <span class="gradient-text">Connect</span></h1>
+    <p class="reveal reveal-delay-1" data-i18n="cnt.hero.sub">Have a project in mind, a question, or just want to say hello? I'd love to hear from you — my inbox is always open.</p>
+  </div>
+</section>
+
+<section class="contact-section">
+  <div class="container">
+    <div class="contact-grid">
+
+      <div class="contact-info">
+        <h2 class="reveal" data-i18n-html="cnt.info.title">Get In <span class="gradient-text">Touch</span></h2>
+        <p class="reveal reveal-delay-1" data-i18n="cnt.info.p">Whether you're looking for a developer to join your team, need a freelance collaborator for a project, or simply want to chat about tech — I'm all ears. I typically respond within 24 hours.</p>
+
+        <div class="contact-details">
+          <div class="contact-detail reveal">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-detail-info">
+              <h4 data-i18n="cnt.d.email">Email</h4>
+              <p>abdoels334@gmail.com</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-1">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-detail-info">
+              <h4 data-i18n="cnt.d.location">Location</h4>
+              <p data-i18n="cnt.d.locVal">Paramaribo, Suriname 🇸🇷</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-2">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-detail-info">
+              <h4 data-i18n="cnt.d.resp">Response Time</h4>
+              <p data-i18n="cnt.d.respVal">Within 24 hours</p>
+            </div>
+          </div>
+          <div class="contact-detail reveal reveal-delay-3">
+            <div class="contact-icon"><i class="fas fa-globe"></i></div>
+            <div class="contact-detail-info">
+              <h4 data-i18n="cnt.d.mode">Work Mode</h4>
+              <p data-i18n="cnt.d.modeVal">Remote / Hybrid / On-site</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-social-row reveal">
+          <a href="#" class="social-btn" title="GitHub" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="#" class="social-btn" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="#" class="social-btn" title="Twitter/X" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" class="social-btn" title="CodePen" aria-label="CodePen"><i class="fab fa-codepen"></i></a>
+          <a href="#" class="social-btn" title="Dev.to" aria-label="Dev.to"><i class="fab fa-dev"></i></a>
+        </div>
+
+        <div class="availability-badge reveal">
+          <div class="avail-dot"></div>
+          <p class="avail-text" data-i18n="cnt.avail">Currently available for freelance &amp; full-time roles</p>
+        </div>
+      </div>
+
+      <div class="contact-form-card reveal reveal-delay-2">
+        <h3 class="form-title" data-i18n="cnt.f.title">Send a Message</h3>
+        <p class="form-subtitle" data-i18n="cnt.f.sub">Fill in the form below and I'll get back to you as soon as possible.</p>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fname" data-i18n="cnt.f.fname">First Name</label>
+              <input type="text" id="fname" name="fname" placeholder="John" required data-i18n-ph="cnt.f.fname" />
+            </div>
+            <div class="form-group">
+              <label for="lname" data-i18n="cnt.f.lname">Last Name</label>
+              <input type="text" id="lname" name="lname" placeholder="Doe" required data-i18n-ph="cnt.f.lname" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="email" data-i18n="cnt.f.email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required />
+          </div>
+
+          <div class="form-group">
+            <label for="subject" data-i18n="cnt.f.subject">Subject</label>
+            <select id="subject" name="subject">
+              <option value="" disabled selected data-i18n-opt="cnt.f.s.ph">Select a topic…</option>
+              <option value="freelance" data-i18n-opt="cnt.f.s.o1">Freelance / Contract Work</option>
+              <option value="fulltime" data-i18n-opt="cnt.f.s.o2">Full-Time Opportunity</option>
+              <option value="collab" data-i18n-opt="cnt.f.s.o3">Collaboration / Partnership</option>
+              <option value="feedback" data-i18n-opt="cnt.f.s.o4">Feedback on My Work</option>
+              <option value="other" data-i18n-opt="cnt.f.s.o5">Just Saying Hello 👋</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="budget" data-i18n="cnt.f.budget">Budget Range (optional)</label>
+            <select id="budget" name="budget">
+              <option value="" disabled selected data-i18n-opt="cnt.f.b.ph">Select a range…</option>
+              <option value="small" data-i18n-opt="cnt.f.b.o1">Under €1,000</option>
+              <option value="medium" data-i18n-opt="cnt.f.b.o2">€1,000 – €5,000</option>
+              <option value="large" data-i18n-opt="cnt.f.b.o3">€5,000 – €15,000</option>
+              <option value="xlarge" data-i18n-opt="cnt.f.b.o4">€15,000+</option>
+              <option value="na" data-i18n-opt="cnt.f.b.o5">Not Applicable</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="message" data-i18n="cnt.f.msg">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, idea, or anything on your mind…" required data-i18n-ph="cnt.f.msg.ph"></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            <i class="fas fa-paper-plane"></i> <span data-i18n="cnt.f.submit">Send Message</span>
+          </button>
+        </form>
+
+        <div class="form-success">
+          <div class="success-icon"><i class="fas fa-check"></i></div>
+          <h3 data-i18n="cnt.ok.title">Message Sent! 🎉</h3>
+          <p data-i18n="cnt.ok.text">Thanks for reaching out. I'll review your message and get back to you within 24 hours.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="faq-section reveal">
+      <h3 class="faq-title" data-i18n-html="cnt.faq.title">Frequently Asked <span class="gradient-text">Questions</span></h3>
+      <div class="faq-accordion">
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">💼</span>
+            <span class="faq-q-text" data-i18n="cnt.faq.1.q">Are you available for freelance?</span>
+            <i class="fas fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="cnt.faq.1.a">Yes! I take on select freelance and contract projects alongside my main work. Let's discuss your needs.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">⏱️</span>
+            <span class="faq-q-text" data-i18n="cnt.faq.2.q">What's your typical timeline?</span>
+            <i class="fas fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="cnt.faq.2.a">Small projects take 1–3 weeks; larger applications typically 4–12 weeks depending on complexity and scope.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">🌍</span>
+            <span class="faq-q-text" data-i18n="cnt.faq.3.q">Do you work remotely?</span>
+            <i class="fas fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="cnt.faq.3.a">Absolutely — I'm fully set up for remote work and have collaborated with international teams across time zones.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button type="button" class="faq-question" aria-expanded="false">
+            <span class="faq-q-icon">🤝</span>
+            <span class="faq-q-text" data-i18n="cnt.faq.4.q">What does collaboration look like?</span>
+            <i class="fas fa-chevron-down faq-chevron"></i>
+          </button>
+          <div class="faq-answer" role="region">
+            <p data-i18n="cnt.faq.4.a">Regular check-ins, transparent progress updates, iterative feedback loops, and clear documentation at every stage.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-content">
+      <a href="index.html" class="footer-logo">MA.</a>
+      <p class="footer-text" data-i18n="ftr.copy">© 2025 Muhammad Abdoel. Crafted with ❤️ and lots of ☕</p>
+      <div class="footer-social">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+        <a href="mailto:abdoels334@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/contact.js"></script>
+<script src="js/i18n.js"></script>
+</body>
+</html>
