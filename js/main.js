@@ -224,19 +224,44 @@ if (filterBtns.length) {
   });
 }
 
+// === MAGNETIC BUTTONS ===
+if (window.matchMedia('(pointer: fine)').matches) {
+  document.querySelectorAll('.btn, .nav-cta').forEach(btn => {
+    btn.addEventListener('mousemove', e => {
+      const rect = btn.getBoundingClientRect();
+      const dx = (e.clientX - (rect.left + rect.width  / 2)) * 0.2;
+      const dy = (e.clientY - (rect.top  + rect.height / 2)) * 0.2;
+      btn.style.transform = `translate(${dx}px, ${dy}px) translateY(-3px)`;
+    });
+    btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
+  });
+}
+
 // === PARTICLE CANVAS (hero only) ===
 const canvas = document.getElementById('particles');
 if (canvas) {
   const ctx = canvas.getContext('2d');
   let W, H, particles = [];
 
+  const COLORS = [
+    [139, 92, 246],   // purple
+    [6,   182, 212],  // cyan
+    [236, 72,  153],  // pink
+  ];
+
   function resize() { W = canvas.width = window.innerWidth; H = canvas.height = window.innerHeight; }
   resize();
   window.addEventListener('resize', resize, { passive: true });
 
   function mkParticle() {
-    return { x: Math.random()*W, y: Math.random()*H, r: Math.random()*1.8+0.4,
-             vx: (Math.random()-0.5)*0.45, vy: (Math.random()-0.5)*0.45, a: Math.random()*0.45+0.08 };
+    const c = COLORS[Math.floor(Math.random() * COLORS.length)];
+    return {
+      x: Math.random()*W, y: Math.random()*H,
+      r: Math.random()*1.8+0.4,
+      vx: (Math.random()-0.5)*0.45, vy: (Math.random()-0.5)*0.45,
+      a: Math.random()*0.35+0.06,
+      c,
+    };
   }
   for (let i = 0; i < 90; i++) particles.push(mkParticle());
 
@@ -246,16 +271,23 @@ if (canvas) {
       p.x += p.vx; p.y += p.vy;
       if (p.x < 0) p.x = W; if (p.x > W) p.x = 0;
       if (p.y < 0) p.y = H; if (p.y > H) p.y = 0;
-      ctx.beginPath(); ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
-      ctx.fillStyle = `rgba(124,58,237,${p.a})`; ctx.fill();
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.r, 0, Math.PI*2);
+      ctx.fillStyle = `rgba(${p.c[0]},${p.c[1]},${p.c[2]},${p.a})`;
+      ctx.fill();
     });
     for (let i = 0; i < particles.length; i++) {
       for (let j = i+1; j < particles.length; j++) {
         const dx = particles[i].x-particles[j].x, dy = particles[i].y-particles[j].y;
-        const d = Math.sqrt(dx*dx+dy*dy);
+        const d  = Math.sqrt(dx*dx+dy*dy);
         if (d < 130) {
-          ctx.beginPath(); ctx.moveTo(particles[i].x, particles[i].y); ctx.lineTo(particles[j].x, particles[j].y);
-          ctx.strokeStyle = `rgba(124,58,237,${0.12*(1-d/130)})`; ctx.lineWidth = 0.6; ctx.stroke();
+          const c = particles[i].c;
+          ctx.beginPath();
+          ctx.moveTo(particles[i].x, particles[i].y);
+          ctx.lineTo(particles[j].x, particles[j].y);
+          ctx.strokeStyle = `rgba(${c[0]},${c[1]},${c[2]},${0.1*(1-d/130)})`;
+          ctx.lineWidth = 0.6;
+          ctx.stroke();
         }
       }
     }
