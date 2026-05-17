@@ -46,8 +46,8 @@
   --radius-sm:  12px;
   --radius-xs:  8px;
 
-  --font-heading: 'Space Grotesk', 'Inter', sans-serif;
-  --font-body:    'Inter', system-ui, sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-body:    'Plus Jakarta Sans', sans-serif;
 }
 
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
@@ -163,8 +163,8 @@ h1, h2, h3, h4, h5 {
   box-shadow: 0 4px 20px rgba(139, 92, 246, 0.15);
 }
 
-section { padding: 6rem 0; }
-.section-header { margin-bottom: 4rem; }
+section { padding: 7rem 0; }
+.section-header { margin-bottom: 4.5rem; }
 .section-tag { display: inline-flex; margin-bottom: 1rem; }
 .section-title { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 0.75rem; }
 .section-subtitle {
@@ -196,8 +196,8 @@ section { padding: 6rem 0; }
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-@media (max-width: 768px) { section { padding: 4rem 0; } }
-@media (max-width: 480px) { .container { padding: 0 1.25rem; } }
+@media (max-width: 768px) { section { padding: 5rem 0; } }
+@media (max-width: 480px) { .container { padding: 0 1.5rem; } }
 
 /* ================================================================
    NAVBAR
@@ -324,7 +324,7 @@ section { padding: 6rem 0; }
   align-items: center;
   position: relative;
   overflow: hidden;
-  padding: 9rem 0 5rem;
+  padding: 9rem 0 8rem;
 }
 .hero::before {
   content: '';
@@ -514,9 +514,9 @@ section { padding: 6rem 0; }
   -webkit-backdrop-filter: blur(20px) saturate(180%);
   backdrop-filter: blur(20px) saturate(180%);
   border-radius: var(--radius-sm);
-  padding: 0.9rem 1.4rem;
+  padding: 1.1rem 1.6rem;
   text-align: center;
-  min-width: 120px;
+  min-width: 130px;
   box-shadow: var(--shadow-inner), 0 8px 24px rgba(0, 0, 0, 0.4);
   transition: var(--transition);
 }
@@ -554,7 +554,7 @@ section { padding: 6rem 0; }
 .about .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 5rem;
+  gap: 6rem;
   align-items: center;
 }
 .about-text p {
@@ -572,7 +572,7 @@ section { padding: 6rem 0; }
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius);
-  padding: 1.5rem;
+  padding: 1.75rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
@@ -683,7 +683,7 @@ section { padding: 6rem 0; }
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius);
-  padding: 1.6rem;
+  padding: 2rem;
   flex: 1;
   transition: var(--transition);
   -webkit-backdrop-filter: blur(10px);
@@ -754,7 +754,7 @@ section { padding: 6rem 0; }
   background: rgba(255, 255, 255, 0.025);
   border: 1px solid rgba(255, 255, 255, 0.07);
   border-radius: var(--radius);
-  padding: 1.75rem;
+  padding: 2rem;
   transition: var(--transition);
   position: relative;
   overflow: hidden;
