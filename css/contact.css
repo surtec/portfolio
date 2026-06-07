@@ -72,8 +72,8 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% -10%, rgba(139, 92, 246, 0.14) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 80%, rgba(6, 182, 212, 0.06) 0%, transparent 50%);
+    radial-gradient(ellipse at 50% -10%, rgba(16, 185, 129, 0.1) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
   pointer-events: none;
 }
 .page-hero-blob {
@@ -85,7 +85,7 @@
 }
 .page-hero-blob-1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle at center, #8b5cf6, #4c1d95);
+  background: radial-gradient(circle at center, #10b981, #064e3b);
   top: -200px; left: 50%; transform: translateX(-50%);
 }
 .page-hero h1 {
@@ -125,8 +125,8 @@
 .contact-detail { display: flex; align-items: center; gap: 1rem; }
 .contact-icon {
   width: 46px; height: 46px;
-  background: rgba(139, 92, 246, 0.08);
-  border: 1px solid rgba(139, 92, 246, 0.2);
+  background: rgba(16, 185, 129, 0.08);
+  border: 1px solid rgba(16, 185, 129, 0.2);
   border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
@@ -137,9 +137,9 @@
   transition: var(--transition);
 }
 .contact-detail:hover .contact-icon {
-  background: rgba(139, 92, 246, 0.15);
-  border-color: rgba(139, 92, 246, 0.4);
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.2);
+  background: rgba(16, 185, 129, 0.15);
+  border-color: rgba(16, 185, 129, 0.4);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
 }
 .contact-detail-info h4 { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.1rem; font-weight: 500; }
 .contact-detail-info p  { font-size: 0.92rem; }
@@ -162,8 +162,8 @@
   border-color: var(--primary-light);
   color: var(--primary-light);
   transform: translateY(-3px);
-  background: rgba(139, 92, 246, 0.08);
-  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.2);
+  background: rgba(16, 185, 129, 0.08);
+  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
 }
 .availability-badge {
   display: flex;
@@ -243,9 +243,9 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: rgba(139, 92, 246, 0.5);
-  box-shadow: 0 0 0 3px rgba(139, 92, 246, 0.1);
-  background: rgba(139, 92, 246, 0.03);
+  border-color: rgba(16, 185, 129, 0.5);
+  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
+  background: rgba(16, 185, 129, 0.03);
 }
 .form-group select {
   cursor: pointer;
@@ -285,7 +285,7 @@
 }
 .form-submit:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(139, 92, 246, 0.5);
+  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
 }
 .form-submit:hover:not(:disabled)::after { left: 130%; }
 .form-submit:disabled { opacity: 0.65; cursor: not-allowed; }
