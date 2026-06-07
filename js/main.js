@@ -60,6 +60,25 @@ _sharedStyle.textContent = `
   .lang-toggle:hover { border-color: #7c3aed; background: rgba(124,58,237,0.08); }
   .lang-toggle .lang-active { color: #7c3aed; }
   .lang-toggle .lang-sep { opacity: 0.3; font-weight: 300; }
+  [data-theme="light"] .lang-toggle { border-color: rgba(0,0,0,0.15); color: #5c5650; }
+  [data-theme="light"] .lang-toggle:hover { border-color: #b8944f; background: rgba(184,148,79,0.08); }
+  [data-theme="light"] .lang-toggle .lang-active { color: #b8944f; }
+
+  /* ── Theme Toggle ── */
+  .theme-toggle {
+    background: none;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #94a3b8;
+    font-family: inherit; font-size: 0.88rem;
+    width: 34px; height: 34px;
+    border-radius: 6px;
+    display: flex; align-items: center; justify-content: center;
+    transition: border-color 0.2s, background 0.2s, color 0.2s;
+    flex-shrink: 0;
+  }
+  .theme-toggle:hover { border-color: #c9a96e; background: rgba(201,169,110,0.08); color: #c9a96e; }
+  [data-theme="light"] .theme-toggle { border-color: rgba(0,0,0,0.15); color: #5c5650; }
+  [data-theme="light"] .theme-toggle:hover { border-color: #b8944f; background: rgba(184,148,79,0.08); color: #b8944f; }
 `;
 document.head.appendChild(_sharedStyle);
 
@@ -223,6 +242,27 @@ if (filterBtns.length) {
     });
   });
 }
+
+// === THEME TOGGLE ===
+(function () {
+  const btn = document.getElementById('themeToggle');
+  if (!btn) return;
+
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    localStorage.setItem('theme', theme);
+    const icon = btn.querySelector('i');
+    if (icon) icon.className = theme === 'dark' ? 'fas fa-sun' : 'fas fa-moon';
+  }
+
+  const saved = localStorage.getItem('theme') || 'dark';
+  applyTheme(saved);
+
+  btn.addEventListener('click', () => {
+    const current = document.documentElement.getAttribute('data-theme') || 'dark';
+    applyTheme(current === 'dark' ? 'light' : 'dark');
+  });
+})();
 
 // === MAGNETIC BUTTONS ===
 if (window.matchMedia('(pointer: fine)').matches) {
