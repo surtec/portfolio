@@ -138,11 +138,11 @@ if (hamburger && navLinks) {
 const typingEl = document.querySelector('.typing-text');
 if (typingEl) {
   const roles = [
-    'Full Stack Developer',
-    'UI/UX Enthusiast',
+    'ICT Student @ UNASAT',
+    'Former Operations Manager',
+    'Web Developer in Progress',
     'Problem Solver',
-    'Software Engineer',
-    'Open Source Contributor',
+    'Based in Paramaribo, Suriname',
   ];
   let roleIdx = 0, charIdx = 0, deleting = false;
 

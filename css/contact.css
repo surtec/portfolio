@@ -72,20 +72,20 @@
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse at 50% -10%, rgba(16, 185, 129, 0.1) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 80%, rgba(245, 158, 11, 0.06) 0%, transparent 50%);
+    radial-gradient(ellipse at 50% -10%, rgba(255, 255, 255, 0.06) 0%, transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(255, 255, 255, 0.03) 0%, transparent 50%);
   pointer-events: none;
 }
 .page-hero-blob {
   position: absolute;
   border-radius: 50%;
   filter: blur(80px);
-  opacity: 0.09;
+  opacity: 0.07;
   pointer-events: none;
 }
 .page-hero-blob-1 {
   width: 500px; height: 500px;
-  background: radial-gradient(circle at center, #10b981, #064e3b);
+  background: radial-gradient(circle at center, #e2e8f0, #475569);
   top: -200px; left: 50%; transform: translateX(-50%);
 }
 .page-hero h1 {
@@ -126,8 +126,8 @@
 .contact-detail { display: flex; align-items: center; gap: 1rem; }
 .contact-icon {
   width: 46px; height: 46px;
-  background: rgba(16, 185, 129, 0.08);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-xs);
   display: flex;
   align-items: center;
@@ -138,9 +138,9 @@
   transition: var(--transition);
 }
 .contact-detail:hover .contact-icon {
-  background: rgba(16, 185, 129, 0.15);
-  border-color: rgba(16, 185, 129, 0.4);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
+  background: rgba(255, 255, 255, 0.07);
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
 }
 .contact-detail-info h4 { font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.1rem; font-weight: 500; }
 .contact-detail-info p  { font-size: 0.92rem; }
@@ -163,16 +163,16 @@
   border-color: var(--primary-light);
   color: var(--primary-light);
   transform: translateY(-3px);
-  background: rgba(16, 185, 129, 0.08);
-  box-shadow: 0 4px 14px rgba(16, 185, 129, 0.2);
+  background: rgba(255, 255, 255, 0.04);
+  box-shadow: 0 4px 14px rgba(255, 255, 255, 0.1);
 }
 .availability-badge {
   display: flex;
   align-items: center;
   gap: 0.75rem;
   padding: 1rem 1.2rem;
-  background: rgba(16, 185, 129, 0.05);
-  border: 1px solid rgba(16, 185, 129, 0.2);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: var(--radius-sm);
   -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
@@ -244,9 +244,9 @@
 .form-group input:focus,
 .form-group select:focus,
 .form-group textarea:focus {
-  border-color: rgba(16, 185, 129, 0.5);
-  box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.1);
-  background: rgba(16, 185, 129, 0.03);
+  border-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
 }
 .form-group select {
   cursor: pointer;
@@ -286,7 +286,7 @@
 }
 .form-submit:hover:not(:disabled) {
   transform: translateY(-2px);
-  box-shadow: 0 8px 30px rgba(16, 185, 129, 0.5);
+  box-shadow: 0 8px 30px rgba(255, 255, 255, 0.25);
 }
 .form-submit:hover:not(:disabled)::after { left: 130%; }
 .form-submit:disabled { opacity: 0.65; cursor: not-allowed; }
@@ -303,18 +303,88 @@
 .success-icon {
   width: 72px; height: 72px;
   border-radius: 50%;
-  background: rgba(16, 185, 129, 0.1);
-  border: 2px solid rgba(16, 185, 129, 0.3);
+  background: rgba(255, 255, 255, 0.05);
+  border: 2px solid rgba(255, 255, 255, 0.15);
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 2rem;
   color: var(--success);
   margin-bottom: 0.5rem;
-  box-shadow: 0 0 30px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 30px rgba(255, 255, 255, 0.07);
 }
 .form-success h3 { font-size: 1.4rem; }
 .form-success p { color: var(--text-secondary); font-size: 0.9rem; max-width: 300px; line-height: 1.6; }
 
+/* ================================================================
+   EMAIL MOCKUP
+   ================================================================ */
+
+.email-mockup {
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius);
+  overflow: hidden;
+}
+
+.email-chrome {
+  background: rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 0.85rem 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.email-chrome-dots { display: flex; gap: 0.45rem; }
+.email-chrome-dots span {
+  width: 11px; height: 11px;
+  border-radius: 50%;
+}
+.email-chrome-dots span:nth-child(1) { background: #ff5f57; }
+.email-chrome-dots span:nth-child(2) { background: #febc2e; }
+.email-chrome-dots span:nth-child(3) { background: #28c840; }
+.email-chrome-title {
+  flex: 1;
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.email-field {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.9rem 1.5rem;
+}
+.email-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  min-width: 58px;
+}
+.email-value { font-size: 0.92rem; color: var(--text-secondary); }
+.email-value--gold  { color: var(--primary-light); }
+.email-value--muted { color: var(--text-muted); font-style: italic; }
+
+.email-divider { height: 1px; background: rgba(255, 255, 255, 0.05); margin: 0 1.5rem; }
+
+.email-body {
+  padding: 1.75rem 1.5rem;
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.85;
+  min-height: 200px;
+}
+.email-placeholder { color: var(--text-muted); font-style: italic; }
+
+.email-footer {
+  padding: 1.25rem 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.02);
+}
+.email-send-btn { width: 100%; justify-content: center; }
+
 @media (max-width: 1024px) { .contact-grid { grid-template-columns: 1fr; } }
-@media (max-width: 768px)  { .form-row { grid-template-columns: 1fr; } }

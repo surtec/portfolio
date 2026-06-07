@@ -8,7 +8,7 @@
   <meta name="description" content="Learn more about Muhammad Abdoel — ICT student, aspiring developer, and former manager from Paramaribo, Suriname." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Playfair+Display:ital,wght@0,700;1,700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <link rel="stylesheet" href="css/main.css" />
   <link rel="stylesheet" href="css/about.css" />
@@ -62,10 +62,7 @@
     <div class="about-image-wrapper reveal">
       <div class="about-image">
         <div class="about-image-inner">
-          <div class="photo-placeholder photo-placeholder--about">
-            <i class="fas fa-user"></i>
-            <span>Jouw foto</span>
-          </div>
+          <img src="images/photo.jpg" alt="Muhammad Abdoel" class="about-photo">
         </div>
       </div>
       <div class="experience-badge">
@@ -85,7 +82,7 @@
     </div>
     <div class="timeline">
       <div class="timeline-item reveal">
-        <div class="timeline-dot logo-initials">UN</div>
+        <div class="timeline-dot"><img src="images/unasat.jpg" alt="UNASAT" class="timeline-logo-img"></div>
         <div class="timeline-content">
           <div class="timeline-period">2025 — Present</div>
           <h3 data-i18n="abt.edu.1.deg">Bachelor of ICT</h3>
@@ -95,7 +92,7 @@
         </div>
       </div>
       <div class="timeline-item reveal reveal-delay-1">
-        <div class="timeline-dot logo-initials">AK</div>
+        <div class="timeline-dot"><img src="images/adek.jpg" alt="ADEK" class="timeline-logo-img"></div>
         <div class="timeline-content">
           <div class="timeline-period">2024 — 2025</div>
           <h3 data-i18n="abt.edu.2.deg">Schakeljaar — Accountancy</h3>
@@ -105,7 +102,7 @@
         </div>
       </div>
       <div class="timeline-item reveal reveal-delay-2">
-        <div class="timeline-dot logo-initials">L1</div>
+        <div class="timeline-dot"><img src="images/lyco1.jpg" alt="Lyco1" class="timeline-logo-img"></div>
         <div class="timeline-content">
           <div class="timeline-period">2019 — 2024</div>
           <h3 data-i18n="abt.edu.3.deg">Secondary Education</h3>
@@ -125,93 +122,28 @@
       <h2 class="section-title reveal" data-i18n-html="abt.sk.title">Tech <span class="gradient-text">Stack</span></h2>
       <p class="section-subtitle reveal reveal-delay-1" data-i18n="abt.sk.sub">The technologies I've learned and worked with so far in my ICT studies and projects.</p>
     </div>
-    <div class="skills-container">
-      <div class="skills-categories">
-        <div class="skill-category reveal">
-          <h3><i class="fas fa-desktop icon-primary"></i> <span data-i18n="abt.sk.webdev">Web Development</span></h3>
-          <div class="skill-grid">
-            <div class="skill-badge">
-              <span class="badge-icon">🌐</span> HTML
-              <span class="sk-level sk-level--comfortable" data-i18n="abt.sk.lvl.comfortable">Comfortable</span>
-            </div>
-            <div class="skill-badge">
-              <span class="badge-icon">🎨</span> CSS
-              <span class="sk-level sk-level--comfortable" data-i18n="abt.sk.lvl.comfortable">Comfortable</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill-category reveal reveal-delay-1">
-          <h3><i class="fas fa-code icon-accent"></i> <span data-i18n="abt.sk.prog">Programming</span></h3>
-          <div class="skill-grid">
-            <div class="skill-badge">
-              <span class="badge-icon">☕</span> Java
-              <span class="sk-level sk-level--learning" data-i18n="abt.sk.lvl.learning">Learning</span>
-            </div>
-            <div class="skill-badge">
-              <span class="badge-icon">📄</span> JSON
-              <span class="sk-level sk-level--comfortable" data-i18n="abt.sk.lvl.comfortable">Comfortable</span>
-            </div>
-          </div>
-        </div>
-        <div class="skill-category reveal reveal-delay-2">
-          <h3><i class="fas fa-database icon-success"></i> <span data-i18n="abt.sk.db">Database &amp; Tools</span></h3>
-          <div class="skill-grid">
-            <div class="skill-badge">
-              <span class="badge-icon">🐬</span> MySQL
-              <span class="sk-level sk-level--learning" data-i18n="abt.sk.lvl.learning">Learning</span>
-            </div>
-            <div class="skill-badge">
-              <span class="badge-icon">🖥️</span> XAMPP
-              <span class="sk-level sk-level--exploring" data-i18n="abt.sk.lvl.exploring">Exploring</span>
-            </div>
-          </div>
+    <div class="skills-flat">
+      <div class="skill-category reveal">
+        <h3><i class="fas fa-desktop icon-primary"></i> <span data-i18n="abt.sk.webdev">Web Development</span></h3>
+        <div class="skill-grid">
+          <div class="skill-badge"><span class="badge-icon">🌐</span> HTML</div>
+          <div class="skill-badge"><span class="badge-icon">🎨</span> CSS</div>
         </div>
       </div>
-      <div class="skill-bars reveal reveal-delay-1">
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">HTML</span><span class="skill-bar-percent">75%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="75%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">CSS</span><span class="skill-bar-percent">70%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="70%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">Java</span><span class="skill-bar-percent">60%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">MySQL</span><span class="skill-bar-percent">65%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">JSON</span><span class="skill-bar-percent">65%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="65%"></div></div>
-        </div>
-        <div class="skill-bar-item">
-          <div class="skill-bar-header"><span class="skill-bar-name">XAMPP</span><span class="skill-bar-percent">60%</span></div>
-          <div class="skill-bar-track"><div class="skill-bar-fill" data-width="60%"></div></div>
+      <div class="skill-category reveal reveal-delay-1">
+        <h3><i class="fas fa-code icon-accent"></i> <span data-i18n="abt.sk.prog">Programming</span></h3>
+        <div class="skill-grid">
+          <div class="skill-badge"><span class="badge-icon">☕</span> Java</div>
+          <div class="skill-badge"><span class="badge-icon">🟨</span> JavaScript</div>
+          <div class="skill-badge"><span class="badge-icon">📄</span> JSON</div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
-
-<section class="about-cta">
-  <div class="container">
-    <div class="cta-inner reveal">
-      <div class="section-tag section-tag--spaced">
-        <span class="tag"><i class="fas fa-handshake"></i> <span data-i18n="abt.cta.tag">Let's Work Together</span></span>
-      </div>
-      <h2 data-i18n-html="abt.cta.title">Interested in <span class="gradient-text">Working Together?</span></h2>
-      <p data-i18n="abt.cta.text">I'm open to freelance work, collaborations, and full-time opportunities. Don't hesitate to reach out — I'd love to hear about your project.</p>
-      <div class="cta-actions">
-        <a href="contact.html" class="btn btn-primary">
-          <i class="fas fa-envelope"></i> <span data-i18n="abt.cta.btn1">Get In Touch</span>
-        </a>
-        <a href="work.html" class="btn btn-outline">
-          <i class="fas fa-briefcase"></i> <span data-i18n="abt.cta.btn2">View My Work</span>
-        </a>
+      <div class="skill-category reveal reveal-delay-2">
+        <h3><i class="fas fa-database icon-success"></i> <span data-i18n="abt.sk.db">Database &amp; Tools</span></h3>
+        <div class="skill-grid">
+          <div class="skill-badge"><span class="badge-icon">🐬</span> MySQL</div>
+          <div class="skill-badge"><span class="badge-icon">🖥️</span> XAMPP</div>
+        </div>
       </div>
     </div>
   </div>

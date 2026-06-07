@@ -40,9 +40,12 @@ const TRANSLATIONS = {
     'idx.abt.badge':     'Years of Experience',
 
     /* ══ INDEX · VALUES ══ */
-    'idx.val.tag':   'My Approach',
-    'idx.val.title': 'What I <span class="gradient-text">Bring</span>',
-    'idx.val.sub':   'The principles I apply to every project I work on.',
+    'idx.val.v1.title': 'Business First',
+    'idx.val.v1.desc':  "I understand how organisations work from the inside — which means I build things with real users in mind, not just code for its own sake.",
+    'idx.val.v2.title': 'Always Learning',
+    'idx.val.v2.desc':  "I'm early in my tech journey and honest about it. That means I approach every problem with curiosity, not ego.",
+    'idx.val.v3.title': 'Built to Last',
+    'idx.val.v3.desc':  "Coming from ops management, I care about reliability and clean structure — in code and in life.",
 
     /* ══ INDEX · EDUCATION ══ */
     'idx.edu.tag':      'Education',
@@ -267,9 +270,12 @@ const TRANSLATIONS = {
     'idx.abt.badge':    'Jaar Ervaring',
 
     /* ══ INDEX · VALUES ══ */
-    'idx.val.tag':   'Mijn Aanpak',
-    'idx.val.title': 'Wat Ik <span class="gradient-text">Meeneem</span>',
-    'idx.val.sub':   'De principes die ik toepas op elk project.',
+    'idx.val.v1.title': 'Business Voorop',
+    'idx.val.v1.desc':  "Ik begrijp hoe organisaties werken van binnenuit — wat betekent dat ik dingen bouw met echte gebruikers in gedachten, niet alleen code omwille van de code.",
+    'idx.val.v2.title': 'Altijd aan het Leren',
+    'idx.val.v2.desc':  "Ik sta vroeg in mijn technische reis en ben eerlijk daarin. Dat betekent dat ik elk probleem benadert met nieuwsgierigheid, niet met ego.",
+    'idx.val.v3.title': 'Gebouwd om te Blijven',
+    'idx.val.v3.desc':  "Vanuit mijn management achtergrond geef ik om betrouwbaarheid en een heldere structuur — in code en in het leven.",
 
     /* ══ INDEX · EDUCATION ══ */
     'idx.edu.tag':      'Opleiding',
