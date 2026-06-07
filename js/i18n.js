@@ -39,6 +39,11 @@ const TRANSLATIONS = {
     'idx.abt.c4.desc':   'Prioritizing security best practices in every project I touch.',
     'idx.abt.badge':     'Years of Experience',
 
+    /* ══ INDEX · VALUES ══ */
+    'idx.val.tag':   'My Approach',
+    'idx.val.title': 'What I <span class="gradient-text">Bring</span>',
+    'idx.val.sub':   'The principles I apply to every project I work on.',
+
     /* ══ INDEX · EDUCATION ══ */
     'idx.edu.tag':      'Education',
     'idx.edu.title':    'My <span class="gradient-text">Background</span>',
@@ -81,7 +86,7 @@ const TRANSLATIONS = {
     /* ══ ABOUT PAGE · HERO ══ */
     'abt.hero.tag':   'About Me',
     'abt.hero.title': 'The Story <span class="gradient-text">Behind the Code</span>',
-    'abt.hero.sub':   'A curious builder from Paramaribo, Suriname — combining management experience with a passion for technology to create things that matter.',
+    'abt.hero.sub':   "I'm a builder from Paramaribo, Suriname — combining management experience with a passion for technology to create things that matter.",
 
     /* ══ ABOUT PAGE · BIO ══ */
     'abt.bio.tag':      'Who I Am',
@@ -89,7 +94,7 @@ const TRANSLATIONS = {
     'abt.bio.subtitle': 'ICT student, developer in progress, and former manager.',
     'abt.bio.p1':       "I'm Muhammad Abdoel, a first-year ICT student at UNASAT (University of Applied Science and Technology) in Paramaribo, Suriname. My journey into technology didn't start in a classroom — it started in the real world, where I spent over two years working in management roles across three different companies.",
     'abt.bio.p2':       "That professional background gave me something most developers don't have early on: a deep understanding of how organisations actually work. I know what it means to coordinate teams, manage operations, and solve real business problems. Now I'm combining that with the technical skills I'm building in my ICT studies to become a developer who doesn't just write code — but understands the impact behind it.",
-    'abt.bio.p3':       "Outside of studying and coding, I'm constantly exploring new technologies, building side projects, and looking for ways to apply what I learn to real-world problems. Technology, for me, is the most powerful tool we have to create meaningful change.",
+    'abt.bio.p3':       "When I'm not studying or coding, I love gaming, watching football, and spending time with family and friends. I grew up in Suriname and that background shapes how I see the world — practical, community-minded, and always looking for ways to help. Building things that actually make people's lives easier is what drives me.",
     'abt.bio.c1.title': 'Goal-Oriented',
     'abt.bio.c1.desc':  'Every project I take on has a clear purpose. I focus on outcomes, not just output.',
     'abt.bio.c2.title': 'Fast Learner',
@@ -261,6 +266,11 @@ const TRANSLATIONS = {
     'idx.abt.c4.desc':  'Beveiligingsbest practices prioriteren in elk project dat ik aanpak.',
     'idx.abt.badge':    'Jaar Ervaring',
 
+    /* ══ INDEX · VALUES ══ */
+    'idx.val.tag':   'Mijn Aanpak',
+    'idx.val.title': 'Wat Ik <span class="gradient-text">Meeneem</span>',
+    'idx.val.sub':   'De principes die ik toepas op elk project.',
+
     /* ══ INDEX · EDUCATION ══ */
     'idx.edu.tag':      'Opleiding',
     'idx.edu.title':    'Mijn <span class="gradient-text">Achtergrond</span>',
@@ -303,7 +313,7 @@ const TRANSLATIONS = {
     /* ══ ABOUT PAGE · HERO ══ */
     'abt.hero.tag':   'Over Mij',
     'abt.hero.title': 'Het Verhaal <span class="gradient-text">Achter de Code</span>',
-    'abt.hero.sub':   'Een nieuwsgierige bouwer uit Paramaribo, Suriname — die managementervaring combineert met een passie voor technologie om dingen te creëren die ertoe doen.',
+    'abt.hero.sub':   'Ik ben een bouwer uit Paramaribo, Suriname — die managementervaring combineert met een passie voor technologie om dingen te creëren die ertoe doen.',
 
     /* ══ ABOUT PAGE · BIO ══ */
     'abt.bio.tag':      'Wie Ik Ben',
@@ -311,7 +321,7 @@ const TRANSLATIONS = {
     'abt.bio.subtitle': 'ICT-student, ontwikkelaar in wording en voormalig manager.',
     'abt.bio.p1':       'Ik ben Muhammad Abdoel, een eerstejaars ICT-student aan de UNASAT (University of Applied Science and Technology) in Paramaribo, Suriname. Mijn reis in de technologie begon niet in een klas — het begon in de echte wereld, waar ik meer dan twee jaar in managementfuncties heb gewerkt bij drie verschillende bedrijven.',
     'abt.bio.p2':       'Die professionele achtergrond gaf mij iets wat de meeste ontwikkelaars niet vroeg hebben: een diepgaand begrip van hoe organisaties echt werken. Ik weet wat het betekent om teams te coördineren, operaties te beheren en echte bedrijfsproblemen op te lossen. Nu combineer ik dat met de technische vaardigheden die ik opbouw in mijn ICT-studie om een ontwikkelaar te worden die niet alleen code schrijft — maar ook de impact erachter begrijpt.',
-    'abt.bio.p3':       'Naast studeren en coderen ben ik constant nieuwe technologieën aan het verkennen, side-projecten aan het bouwen en op zoek naar manieren om wat ik leer toe te passen op echte problemen. Technologie is voor mij het krachtigste instrument dat we hebben om betekenisvolle verandering te creëren.',
+    'abt.bio.p3':       "Als ik niet studeer of code schrijf, game ik graag, kijk ik voetbal en breng ik tijd door met familie en vrienden. Ik ben opgegroeid in Suriname en die achtergrond bepaalt hoe ik de wereld zie — praktisch, gemeenschapsgericht en altijd op zoek naar manieren om te helpen. Dingen bouwen die het leven van mensen echt makkelijker maken — dat is wat mij drijft.",
     'abt.bio.c1.title': 'Doelgericht',
     'abt.bio.c1.desc':  'Elk project dat ik aanneem heeft een duidelijk doel. Ik focus op resultaten, niet alleen op output.',
     'abt.bio.c2.title': 'Snelle Leerder',
